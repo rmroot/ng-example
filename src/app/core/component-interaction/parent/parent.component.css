@@ -1,0 +1,13 @@
+.parent{
+    border: solid 4px #82E0AA;
+}
+
+.child-1{
+    background: #5DADE2;
+    color: white;
+}
+
+.child-2{
+    background:#A569BD;
+    color: white;
+}

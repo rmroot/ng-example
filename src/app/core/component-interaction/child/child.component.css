@@ -1,0 +1,13 @@
+.card{
+    color: black;
+}
+
+.fa-futbol-o{
+    font-size: large;
+    padding: 4px;
+}
+
+.fa-futbol-o:hover{
+    cursor: pointer;
+    font-weight: bold;
+}
