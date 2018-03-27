@@ -7,13 +7,15 @@ import { BannerComponent } from './banner/banner.component';
 import { CoreRoutingModule } from './core-routing.module';
 import { RoutingExampleModule } from './routing-example/routing-example.module';
 import { ComponentInteractionModule } from './component-interaction/component-interaction.module';
+import { BootstrapExamplesModule } from './bootstrap-examples/bootstrap-examples.module';
 
 @NgModule({
   imports: [
     CommonModule,
     CoreRoutingModule,
     RoutingExampleModule,
-    ComponentInteractionModule
+    ComponentInteractionModule,
+    BootstrapExamplesModule
   ],
   declarations: [CoreComponent, SidebarComponent, DashboardComponent, BannerComponent],
   exports: []

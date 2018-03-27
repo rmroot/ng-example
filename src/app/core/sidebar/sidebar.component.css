@@ -1,3 +1,11 @@
 .p-2{
     border-bottom: groove 2px #2874A6;
 }
+.nav-link{
+    border-bottom: groove 2px #2874A6;
+}
+
+
+.active{
+    font-weight: bold;
+}
