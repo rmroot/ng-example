@@ -16,7 +16,8 @@ const bootstrapRoutes: Routes = [
                 children: [
                     {
                         path: '',
-                        component: FlexComponent
+                        pathMatch: 'full',
+                        redirectTo: 'flex'
                     },
                     {
                         path: 'flex',
