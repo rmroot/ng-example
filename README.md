@@ -1,27 +1,40 @@
 # NgExample
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.6.
+This is a demonstration repository that goes along with a series of blogs. The purpose of this repository is to provide a variety of examples of Angular's functionality.
 
-## Development server
+# Building/Running
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Web
+** npm run start
+** navigate to localhost:4200
 
-## Code scaffolding
+Electron Desktop
+** npm run build
+** npm run electron
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Electron Distributable
+** npm run make
 
-## Build
+# Getting started with the Angular CLI
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+https://www.intertech.com/Blog/angular-tutorial-getting-started-with-the-angular-cli/
 
-## Running unit tests
+# Application Structure Using Modules
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+https://www.intertech.com/Blog/angular-module-tutorial-application-structure-using-modules/
 
-## Running end-to-end tests
+# Using Bootstrap with Angular 
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+https://www.intertech.com/Blog/using-bootstrap-4-with-angular/
 
-## Further help
+# Setting up Routing in your Application
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+https://www.intertech.com/Blog/angular-router-tutorial-setting-up-routing-in-your-application/
+
+# Inputs, Outputs and EventEmitters
+
+https://www.intertech.com/Blog/angular-component-tutorial-inputs-outputs-and-eventemitters/
+
+# Adding Electron to Create a Desktop Application
+
+https://www.intertech.com/Blog/electron-tutorial-getting-started-with-electron-and-angular-cli/
