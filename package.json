@@ -2,15 +2,53 @@
   "name": "ng-example",
   "version": "0.0.0",
   "license": "MIT",
+  "main": "src/electronMain.js",
+  "author": "mroot",
+  "description": "Angular and Electron",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "forge-start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
   },
   "private": true,
+  "config": {
+    "forge": {
+      "make_targets": {
+        "win32": [
+          "squirrel"
+        ],
+        "darwin": [
+          "zip"
+        ],
+        "linux": [
+          "deb",
+          "rpm"
+        ]
+      },
+      "electronPackagerConfig": {
+        "packageManager": "npm"
+      },
+      "electronWinstallerConfig": {
+        "name": "ng-example"
+      },
+      "electronInstallerDebian": {},
+      "electronInstallerRedhat": {},
+      "github_repository": {
+        "owner": "",
+        "name": ""
+      },
+      "windowsStoreConfig": {
+        "packageName": "",
+        "name": "ngExample"
+      }
+    }
+  },
   "dependencies": {
     "@angular/animations": "^5.2.0",
     "@angular/common": "^5.2.0",
@@ -22,6 +60,8 @@
     "@angular/platform-browser-dynamic": "^5.2.0",
     "@angular/router": "^5.2.0",
     "core-js": "^2.4.1",
+    "electron-compile": "^6.4.2",
+    "electron-squirrel-startup": "^1.0.0",
     "rxjs": "^5.5.6",
     "zone.js": "^0.8.19"
   },
@@ -34,6 +74,9 @@
     "@types/node": "~6.0.60",
     "bootstrap": "^4.0.0",
     "codelyzer": "^4.0.1",
+    "electron": "^2.0.0",
+    "electron-forge": "^5.2.0",
+    "electron-prebuilt-compile": "2.0.0",
     "font-awesome": "^4.7.0",
     "jasmine-core": "~2.8.0",
     "jasmine-spec-reporter": "~4.2.1",
