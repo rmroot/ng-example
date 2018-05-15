@@ -17,26 +17,27 @@ This is a demonstration repository that goes along with a series of blogs. The p
 2. npm run make
 3. Distributable for your working OS will be placed in **out/** directory.
 
-## Getting started with the Angular CLI
+## Blog Series
 
+### Getting started with the Angular CLI
 https://www.intertech.com/Blog/angular-tutorial-getting-started-with-the-angular-cli/
 
-## Application Structure Using Modules
+### Application Structure Using Modules
 
 https://www.intertech.com/Blog/angular-module-tutorial-application-structure-using-modules/
 
-## Using Bootstrap with Angular 
+### Using Bootstrap with Angular 
 
 https://www.intertech.com/Blog/using-bootstrap-4-with-angular/
 
-## Setting up Routing in your Application
+### Setting up Routing in your Application
 
 https://www.intertech.com/Blog/angular-router-tutorial-setting-up-routing-in-your-application/
 
-## Inputs, Outputs and EventEmitters
+### Inputs, Outputs and EventEmitters
 
 https://www.intertech.com/Blog/angular-component-tutorial-inputs-outputs-and-eventemitters/
 
-## Adding Electron to Create a Desktop Application
+### Adding Electron to Create a Desktop Application
 
 https://www.intertech.com/Blog/electron-tutorial-getting-started-with-electron-and-angular-cli/
