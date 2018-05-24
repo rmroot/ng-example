@@ -4,6 +4,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { CoreComponent } from './core.component';
 import { RoutingExampleComponent } from './routing-example/routing-example.component';
 import { ParentComponent } from './component-interaction/parent/parent.component';
+import { LifecycleHooksComponent } from './lifecycle-hooks/lifecycle-hooks.component';
 
 const coreRoutes: Routes = [
     {
@@ -25,6 +26,10 @@ const coreRoutes: Routes = [
             {
                 path: 'component-interaction',
                 component: ParentComponent
+            },
+            {
+                path: 'lifecycle-hooks',
+                component: LifecycleHooksComponent
             }
         ]
     }

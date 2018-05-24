@@ -7,13 +7,15 @@ import { BannerComponent } from './banner/banner.component';
 import { CoreRoutingModule } from './core-routing.module';
 import { RoutingExampleModule } from './routing-example/routing-example.module';
 import { ComponentInteractionModule } from './component-interaction/component-interaction.module';
+import { LifecycleHooksModule } from './lifecycle-hooks/lifecycle-hooks.module';
 
 @NgModule({
   imports: [
     CommonModule,
     CoreRoutingModule,
     RoutingExampleModule,
-    ComponentInteractionModule
+    ComponentInteractionModule,
+    LifecycleHooksModule
   ],
   declarations: [CoreComponent, SidebarComponent, DashboardComponent, BannerComponent],
   exports: []
