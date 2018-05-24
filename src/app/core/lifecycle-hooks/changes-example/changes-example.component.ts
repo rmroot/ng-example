@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, SimpleChange } from '@angular/core';
+import { Component, OnInit, Input, SimpleChanges } from '@angular/core';
 
 @Component({
   selector: 'app-changes-example',
@@ -14,9 +14,9 @@ export class ChangesExampleComponent implements OnInit {
     console.log('child ngOnInit');
   }
 
-  ngOnChanges(change: SimpleChange){
-    if(change.currentValue < change.previousValue){
-      console.log('num went up from: ' + change.currentValue + ' to ' + change.previousValue);
+  ngOnChanges(change: SimpleChanges){
+    if(change.num.currentValue >> change.num.previousValue){
+      console.log('num went up from: ' + change.num.previousValue + ' to ' + change.num.currentValue);
     }
     console.log('child ngOnChanges');
   }

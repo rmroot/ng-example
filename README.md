@@ -24,5 +24,7 @@ https://www.intertech.com/Blog/using-bootstrap-4-with-angular/
 https://www.intertech.com/Blog/angular-router-tutorial-setting-up-routing-in-your-application/
 ### Inputs, Outputs and EventEmitters
 https://www.intertech.com/Blog/angular-component-tutorial-inputs-outputs-and-eventemitters/
+### Component Lifecycle
+https://www.intertech.com/Blog/angular-component-lifecycle/
 ### Adding Electron to Create a Desktop Application
 https://www.intertech.com/Blog/electron-tutorial-getting-started-with-electron-and-angular-cli/
