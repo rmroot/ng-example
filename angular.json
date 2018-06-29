@@ -42,6 +42,14 @@
                   "with": "src/environments/environment.prod.ts"
                 }
               ]
+            },
+            "fr": {
+              "aot": true,
+              "outputPath": "dist/",
+              "i18nFile": "src/locale/messages.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "fr",
+              "i18nMissingTranslation": "error"
             }
           }
         },
@@ -53,6 +61,9 @@
           "configurations": {
             "production": {
               "browserTarget": "ng-example:build:production"
+            },
+            "fr": {
+              "browserTarget": "ng-example:build:fr"
             }
           }
         },

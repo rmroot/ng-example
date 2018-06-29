@@ -14,7 +14,10 @@
     "e2e": "ng e2e",
     "forge-start": "electron-forge start",
     "package": "electron-forge package",
-    "make": "electron-forge make"
+    "make": "electron-forge make",
+    "start:fr": "ng serve --configuration=fr",
+    "build:fr": "ng build --configuration=fr",
+    "extract": "ng xi18n --output-path=locale"
   },
   "private": true,
   "config": {
