@@ -46,7 +46,7 @@
             "fr": {
               "aot": true,
               "outputPath": "dist/",
-              "i18nFile": "src/locale/messages.xlf",
+              "i18nFile": "src/locale/messages.fr.xlf",
               "i18nFormat": "xlf",
               "i18nLocale": "fr",
               "i18nMissingTranslation": "error"

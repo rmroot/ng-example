@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="welcomeMessage" datatype="html">
+        <source>
+  Hello, welcome to NG Example!
+</source>
+<target>Bienvenue, à NG exemple!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/core/dashboard/dashboard.component.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+        <trans-unit id="sidebarHome" datatype="html">
+        <source>
+        Home
+      </source>
+      <target>Accueil</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/core/sidebar/sidebar.component.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sidebarRouting" datatype="html">
+        <source>
+            Routing Example
+        </source>
+        <target>Exemple de routage</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/core/sidebar/sidebar.component.ts</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sidebarComponent" datatype="html">
+        <source>
+        Component Interaction Example
+      </source>
+        <target>Exemple d'interaction de composant</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/core/sidebar/sidebar.component.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sidebarLifecycleHooks" datatype="html">
+        <source>
+        Lifecycle Hooks
+      </source>
+        <target>Crochets du cycle de vie</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/core/sidebar/sidebar.component.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

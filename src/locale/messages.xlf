@@ -1,17 +1,44 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-  <file source-language="en" datatype="plaintext" original="ng2.template">
-    <body>
-      <trans-unit id="011a0c3d8b1314def6cd5758c39db9ea41b9f65f" datatype="html">
-        <source>
-  Hello, welcome to NG Example!
-</source>
-<target>Bonjour, bienvenue à NG Exemple!</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/core/dashboard/dashboard.component.ts</context>
-          <context context-type="linenumber">1</context>
-        </context-group>
-      </trans-unit>
-    </body>
-  </file>
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+    <file original="ng2.template" source-language="en" datatype="plaintext">
+        <body>
+            <trans-unit id="sidebarHome" datatype="html">
+                <source>Home</source>
+                <target>Accueil</target>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">app/core/sidebar/sidebar.component.ts</context>
+                    <context context-type="linenumber">4</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="sidebarRouting" datatype="html">
+                <source>Routing Example</source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">app/core/sidebar/sidebar.component.ts</context>
+                    <context context-type="linenumber">11</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="sidebarComponent" datatype="html">
+                <source>Component Interaction Example</source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">app/core/sidebar/sidebar.component.ts</context>
+                    <context context-type="linenumber">18</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="sidebarLifecycleHooks" datatype="html">
+                <source>Lifecycle Hooks</source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">app/core/sidebar/sidebar.component.ts</context>
+                    <context context-type="linenumber">25</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="welcomeMessage" datatype="html">
+                <source>Hello, welcome to NG Example!</source>
+                <target>Bienvenue, à NG exemple!</target>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">app/core/dashboard/dashboard.component.ts</context>
+                    <context context-type="linenumber">1</context>
+                </context-group>
+            </trans-unit>
+        </body>
+    </file>
 </xliff>
