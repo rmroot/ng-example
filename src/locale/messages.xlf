@@ -4,7 +4,7 @@
         <body>
             <trans-unit id="sidebarHome" datatype="html">
                 <source>Home</source>
-                <target>Accueil</target>
+                <target>Translated home</target>
                 <context-group purpose="location">
                     <context context-type="sourcefile">app/core/sidebar/sidebar.component.ts</context>
                     <context context-type="linenumber">4</context>
@@ -33,7 +33,7 @@
             </trans-unit>
             <trans-unit id="welcomeMessage" datatype="html">
                 <source>Hello, welcome to NG Example!</source>
-                <target>Bienvenue, à NG exemple!</target>
+                <target>Translate here</target>
                 <context-group purpose="location">
                     <context context-type="sourcefile">app/core/dashboard/dashboard.component.ts</context>
                     <context context-type="linenumber">1</context>
