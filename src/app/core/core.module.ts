@@ -8,6 +8,7 @@ import { CoreRoutingModule } from './core-routing.module';
 import { RoutingExampleModule } from './routing-example/routing-example.module';
 import { ComponentInteractionModule } from './component-interaction/component-interaction.module';
 import { LifecycleHooksModule } from './lifecycle-hooks/lifecycle-hooks.module';
+import { FormsExampleModule } from './forms-example/forms-example.module';
 
 @NgModule({
   imports: [
@@ -15,7 +16,8 @@ import { LifecycleHooksModule } from './lifecycle-hooks/lifecycle-hooks.module';
     CoreRoutingModule,
     RoutingExampleModule,
     ComponentInteractionModule,
-    LifecycleHooksModule
+    LifecycleHooksModule,
+    FormsExampleModule
   ],
   declarations: [CoreComponent, SidebarComponent, DashboardComponent, BannerComponent],
   exports: []

@@ -1,0 +1,26 @@
+<form #userForm="ngForm">
+  <div class="form-group">
+    <label for="firstName">First Name</label>
+    <input class="form-control" name="firstName" id="firstName" type="text" [(ngModel)]="user.firstName" #firstName="ngModel" required>
+    <div [hidden]="firstName.valid || firstName.pristine" class="alert alert-danger">
+      First Name is required
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="lastName">Last Name</label>
+    <input class="form-control" name="lastName" id="lastName" type="text" [(ngModel)]="user.lastName" #lastName="ngModel" required>
+    <div [hidden]="lastName.valid || lastName.pristine" class="alert alert-danger">
+      Last Name is required
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="role">User Role</label>
+    <select class="form-control" name="role" id="role" [(ngModel)]="user.role" required>
+      <option *ngFor="let userRole of roles" [ngValue]="userRole">{{userRole}}</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="notes">Additional Notes</label>
+    <textarea class="form-control" name="notes" id="notes" [(ngModel)]="user.notes" rows="6" placeholder="Add additional notes on {{user.firstName}} {{user.lastName}} here."></textarea>
+  </div>
+</form>
