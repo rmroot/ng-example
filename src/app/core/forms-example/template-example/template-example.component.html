@@ -1,16 +1,21 @@
 <form #userForm="ngForm">
   <div class="form-group">
     <label for="firstName">First Name</label>
-    <input class="form-control" name="firstName" id="firstName" type="text" [(ngModel)]="user.firstName" #firstName="ngModel" required>
-    <div [hidden]="firstName.valid || firstName.pristine" class="alert alert-danger">
-      First Name is required
+    <input class="form-control" name="firstName" id="firstName" type="text" [(ngModel)]="user.firstName" #firstName="ngModel"
+      required>
+    <div *ngIf="!firstName.valid && !firstName.pristine" class="alert alert-danger">
+      <span *ngIf="firstName.errors.required">
+        First Name is required
+      </span>
     </div>
   </div>
   <div class="form-group">
     <label for="lastName">Last Name</label>
     <input class="form-control" name="lastName" id="lastName" type="text" [(ngModel)]="user.lastName" #lastName="ngModel" required>
-    <div [hidden]="lastName.valid || lastName.pristine" class="alert alert-danger">
-      Last Name is required
+    <div *ngIf="!lastName.valid && !lastName.pristine" class="alert alert-danger">
+      <span *ngIf="lastName.errors.required">
+        Last Name is required
+      </span>
     </div>
   </div>
   <div class="form-group">
@@ -24,3 +29,6 @@
     <textarea class="form-control" name="notes" id="notes" [(ngModel)]="user.notes" rows="6" placeholder="Add additional notes on {{user.firstName}} {{user.lastName}} here."></textarea>
   </div>
 </form>
+<div class="d-flex w-100">
+  <button class="btn pull-right btn-primary" (click)="logForm()">Log Form</button>
+</div>

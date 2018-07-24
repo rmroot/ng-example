@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { User } from '../user';
 
 @Component({
@@ -7,7 +7,6 @@ import { User } from '../user';
   styleUrls: ['./template-example.component.css']
 })
 export class TemplateExampleComponent implements OnInit {
-
   user: User = {
     firstName: 'New',
     lastName: 'User',
@@ -20,10 +19,15 @@ export class TemplateExampleComponent implements OnInit {
     'Admin',
     'Owner',
     'Operator'
-  ]
+  ];
+
   constructor() { }
 
   ngOnInit() {
   }
 
+  @ViewChild('userForm') userForm: ElementRef;
+  logForm(){
+    console.log(this.userForm);
+  }
 }
