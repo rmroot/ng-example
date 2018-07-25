@@ -1,5 +1,5 @@
 # NgExample
-This is a demonstration repository that goes along with a series of blogs. The purpose of this repository is to provide a variety of examples of Angular's functionality.
+This is a demonstration repository that goes along with a series of blogs. The purpose of this repository is to provide a variety of examples of Angular's functionality. The examples exist in their own modules within the application. To view them in action, build and run the application. 
 
 ## Building/Running
 ### Web
@@ -28,3 +28,5 @@ https://www.intertech.com/Blog/angular-component-tutorial-inputs-outputs-and-eve
 https://www.intertech.com/Blog/angular-component-lifecycle/
 ### Adding Electron to Create a Desktop Application
 https://www.intertech.com/Blog/electron-tutorial-getting-started-with-electron-and-angular-cli/
+### Template Driven Forms
+https://www.intertech.com/Blog/template-driven-angular-forms/
