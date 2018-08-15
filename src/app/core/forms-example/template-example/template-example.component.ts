@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { User } from '../user';
+import { FormGroup } from '../../../../../node_modules/@angular/forms';
 
 @Component({
   selector: 'app-template-example',
@@ -26,8 +27,20 @@ export class TemplateExampleComponent implements OnInit {
   ngOnInit() {
   }
 
-  @ViewChild('userForm') userForm: ElementRef;
+  @ViewChild('userForm') userForm: FormGroup;
   logForm(){
     console.log(this.userForm);
+  }
+
+  logFormValue(){
+    console.log(this.userForm.value);
+  }
+  
+  disableForm(){
+    this.userForm.disable();
+  }
+
+  enableForm(){
+    this.userForm.enable();
   }
 }

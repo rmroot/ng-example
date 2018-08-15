@@ -1,4 +1,4 @@
-<form #userForm="ngForm">
+<form #userForm="ngForm" (ngSubmit)="logFormValue()">
   <div class="form-group">
     <label for="firstName">First Name</label>
     <input class="form-control" name="firstName" id="firstName" type="text" [(ngModel)]="user.firstName" #firstName="ngModel"
@@ -26,9 +26,19 @@
   </div>
   <div class="form-group">
     <label for="notes">Additional Notes</label>
-    <textarea class="form-control" name="notes" id="notes" [(ngModel)]="user.notes" rows="6" placeholder="Add additional notes on {{user.firstName}} {{user.lastName}} here."></textarea>
+    <textarea class="form-control" name="notes" id="notes" [(ngModel)]="user.notes" maxlength="45" rows="6"  #notes="ngModel"
+    placeholder="Add additional notes on {{user.firstName}} {{user.lastName}} here."></textarea>
+    <div *ngIf="!notes.valid && !notes.pristine" class="alert alert-danger">
+      <span *ngIf="notes.errors.maxlength">
+        Last Name is required
+      </span>
+    </div>
   </div>
+  <button type="submit" class="btn btn-default" [disabled]="!userForm.valid">Submit</button>
 </form>
-<div class="d-flex w-100">
+
+<div class="d-flex w-100 pt-4 justify-content-between">
   <button class="btn pull-right btn-primary" (click)="logForm()">Log Form</button>
+  <button class="btn pull-right btn-warning" (click)="disableForm()">Disable Form</button>
+  <button class="btn pull-right btn-info" (click)="enableForm()">Enable Form</button>
 </div>
