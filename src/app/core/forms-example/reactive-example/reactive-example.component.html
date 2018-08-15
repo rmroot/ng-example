@@ -1,3 +1,37 @@
-<p>
-  reactive-example works!
-</p>
+<form [formGroup]="userForm" (ngSubmit)="logFormValue()">
+  <div class="form-group">
+    <label for="firstName">First Name</label>
+    <input class="form-control" name="firstName" id="firstName" type="text" formControlName="firstName">
+    <div *ngIf="!userForm.controls.firstName.valid && !userForm.controls.firstName.pristine" class="alert alert-danger">
+      <span *ngIf="userForm.controls.firstName.errors.required">
+        First Name is required
+      </span>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="lastName">Last Name</label>
+    <input class="form-control" name="lastName" id="lastName" type="text" formControlName="lastName">
+    <div *ngIf="!userForm.controls.lastName.valid && !userForm.controls.lastName.pristine" class="alert alert-danger">
+      <span *ngIf="userForm.controls.lastName.errors.required">
+        Last Name is required
+      </span>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="role">User Role</label>
+    <select class="form-control" name="role" id="role" formControlName="role">
+      <option *ngFor="let userRole of roles" [ngValue]="userRole">{{userRole}}</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="notes">Additional Notes</label>
+    <textarea class="form-control" name="notes" id="notes" formControlName="notes" rows="6" placeholder="Add additional notes here."></textarea>
+  </div>
+  <button type="submit" class="btn btn-default" [disabled]="!userForm.valid">Submit</button>
+</form>
+
+<div class="d-flex w-100 pt-4 justify-content-between">
+  <button class="btn pull-right btn-primary" (click)="logForm()">Log Form</button>
+  <button class="btn pull-right btn-warning" (click)="disableForm()">Disable Form</button>
+  <button class="btn pull-right btn-info" (click)="enableForm()">Enable Form</button>
+</div>
