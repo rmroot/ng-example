@@ -9,6 +9,8 @@ import { RoutingExampleModule } from './routing-example/routing-example.module';
 import { ComponentInteractionModule } from './component-interaction/component-interaction.module';
 import { LifecycleHooksModule } from './lifecycle-hooks/lifecycle-hooks.module';
 import { FormsExampleModule } from './forms-example/forms-example.module';
+import { FirebaseExampleModule } from './firebase-example/firebase-example.module';
+import { AngularFireAuthModule } from '@angular/fire/auth';
 
 @NgModule({
   imports: [
@@ -17,7 +19,9 @@ import { FormsExampleModule } from './forms-example/forms-example.module';
     RoutingExampleModule,
     ComponentInteractionModule,
     LifecycleHooksModule,
-    FormsExampleModule
+    FormsExampleModule,
+    FirebaseExampleModule,
+    AngularFireAuthModule
   ],
   declarations: [CoreComponent, SidebarComponent, DashboardComponent, BannerComponent],
   exports: []

@@ -1,3 +1,16 @@
-<nav class="navbar navbar-dark navbar-expand">
+<nav class="navbar navbar-dark navbar-expand justify-content-between">
   <a class="navbar-brand">Angular.io Demo</a>
+
+
+  <div *ngIf="afAuth.user | async as user; else showLogin">
+    <a class="navbar-brand" href="#">
+      <img src="{{user.photoURL}}" width="30" height="30" alt="">
+    </a>
+    {{ user.displayName }}
+    <img>
+    <!-- <button (click)="logout()">Logout</button> -->
+  </div>
+  <ng-template class="align-self-end" #showLogin>
+    <button class="btn btn-small" (click)="login()">Login with Google</button>
+  </ng-template>
 </nav>

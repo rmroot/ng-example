@@ -6,6 +6,7 @@ import { RoutingExampleComponent } from './routing-example/routing-example.compo
 import { ParentComponent } from './component-interaction/parent/parent.component';
 import { LifecycleHooksComponent } from './lifecycle-hooks/lifecycle-hooks.component';
 import { FormsExampleComponent } from './forms-example/forms-example.component';
+import { FirebaseExampleComponent } from './firebase-example/firebase-example.component';
 
 const coreRoutes: Routes = [
     {
@@ -35,6 +36,10 @@ const coreRoutes: Routes = [
             {
                 path: 'forms-example',
                 component: FormsExampleComponent
+            },
+            {
+                path:'firebase-example',
+                component: FirebaseExampleComponent
             }
         ]
     }
