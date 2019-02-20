@@ -1,0 +1,8 @@
+.table-label{
+    color: blue;
+}
+
+.table-label:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
