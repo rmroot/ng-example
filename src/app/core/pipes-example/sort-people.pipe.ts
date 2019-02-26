@@ -7,12 +7,8 @@ import * as _ from 'lodash';
 })
 export class SortPeoplePipe implements PipeTransform {
 
-  transform(value: Array<Person>, by: string, direction: any): Array<Person> {
-    console.log(by);
-    //value = _.sortBy(value, args.obj);
+  transform(value: Array<Person>, by: string, direction: "asc" | "desc"): Array<Person> {
     value = _.orderBy(value, [by], direction);
-    console.log(value)
     return value;
   }
-
 }

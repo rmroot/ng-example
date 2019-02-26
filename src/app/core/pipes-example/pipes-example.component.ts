@@ -8,17 +8,17 @@ import { Person, People } from './pipes-example-data';
 })
 export class PipesExampleComponent implements OnInit {
 
-  todaysDate: Date;
-  people: Array<Person>;
   orderBy: string = 'height';
   orderDirection: string = 'asc';
-
+  people: Array<Person>;
+  todaysDate: Date;
   constructor() {
     this.todaysDate = new Date();
     this.people = People;
    }
 
   ngOnInit() {
+
   }
 
   setOrderBy(str: string){
