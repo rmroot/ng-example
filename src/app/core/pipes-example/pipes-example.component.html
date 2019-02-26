@@ -1,0 +1,50 @@
+<div class="p-2">
+  <h6>Today's Date Raw: {{todaysDate}}</h6>
+  <h6>Today's Date Default: {{todaysDate | date}}</h6>
+  <h6>Today's Date Short: {{todaysDate | date:'short'}}</h6>
+  <h6>Today's Date Medium: {{todaysDate | date:'medium'}}</h6>
+  <h6>Today's Date Long: {{todaysDate | date:'long'}}</h6>
+</div>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <td class="table-label w-25" (click)="setOrderBy('name')">
+        Name
+        <span *ngIf="orderBy == 'name'" class="fa pl-2"
+          [ngClass]="{'fa-chevron-up': orderDirection == 'desc', 'fa-chevron-down': orderDirection == 'asc'}"></span>
+      </td>
+      <td class="table-label w-25" (click)="setOrderBy('age')">
+        Age
+        <span *ngIf="orderBy == 'age'" class="fa pl-2"
+          [ngClass]="{'fa-chevron-up': orderDirection == 'desc', 'fa-chevron-down': orderDirection == 'asc'}"></span>
+      </td>
+      <td class="table-label w-25" (click)="setOrderBy('height')">
+        Height
+        <span *ngIf="orderBy == 'height'" class="fa pl-2"
+          [ngClass]="{'fa-chevron-up': orderDirection == 'desc', 'fa-chevron-down': orderDirection == 'asc'}"></span>
+      </td>
+      <td class="table-label w-25" (click)="setOrderBy('weight')">
+        Weight
+        <span *ngIf="orderBy == 'weight'" class="fa pl-2"
+          [ngClass]="{'fa-chevron-up': orderDirection == 'desc', 'fa-chevron-down': orderDirection == 'asc'}"></span>
+      </td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let person of people | sortPeople:orderBy:orderDirection">
+      <td>
+        {{person.name}}
+      </td>
+      <td>
+        {{person.age}}
+      </td>
+      <td>
+        {{person.height}} cm
+      </td>
+      <td>
+        {{person.weight}} kg
+      </td>
+    </tr>
+  </tbody>
+</table>
