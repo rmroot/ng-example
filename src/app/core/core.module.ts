@@ -10,6 +10,7 @@ import { ComponentInteractionModule } from './component-interaction/component-in
 import { LifecycleHooksModule } from './lifecycle-hooks/lifecycle-hooks.module';
 import { FormsExampleModule } from './forms-example/forms-example.module';
 import { PipesExampleModule } from './pipes-example/pipes-example.module';
+import { HttpExampleModule } from './http-example/http-example.module';
 
 @NgModule({
   imports: [
@@ -19,7 +20,8 @@ import { PipesExampleModule } from './pipes-example/pipes-example.module';
     ComponentInteractionModule,
     LifecycleHooksModule,
     FormsExampleModule,
-    PipesExampleModule
+    PipesExampleModule,
+    HttpExampleModule
   ],
   declarations: [CoreComponent, SidebarComponent, DashboardComponent, BannerComponent],
   exports: []

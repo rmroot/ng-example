@@ -1,0 +1,16 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Birth Year</th>
+      <th>Gender</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let character of characters; let index = index;">
+      <td><a (click)="setCharacter(character.url)">{{character.name}}</a></td>
+      <td>{{character.birth_year}}</td>
+      <td>{{character.gender}}</td>
+    </tr>
+  </tbody>
+</table>
