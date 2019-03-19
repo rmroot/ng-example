@@ -7,6 +7,7 @@ import { ParentComponent } from './component-interaction/parent/parent.component
 import { LifecycleHooksComponent } from './lifecycle-hooks/lifecycle-hooks.component';
 import { FormsExampleComponent } from './forms-example/forms-example.component';
 import { PipesExampleComponent } from './pipes-example/pipes-example.component';
+import { WasmComponent } from './wasm/wasm.component';
 
 const coreRoutes: Routes = [
     {
@@ -40,6 +41,10 @@ const coreRoutes: Routes = [
             {
                 path: 'pipes-example',
                 component: PipesExampleComponent
+            },
+            {
+                path: 'wasm',
+                component: WasmComponent
             }
         ]
     }
