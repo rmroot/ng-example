@@ -1,63 +1,32 @@
 import { Injectable } from '@angular/core';
-
-import * as Module from '../../../assets/wasm/someTest';
-//import '!!file-loader?name=wasm/fibonacci.wasm!../../../../wasm/fibonacci.wasm';
-import { BehaviorSubject } from 'rxjs';
-var importObject = { imports: { i: arg => console.log(arg) } };
-
+declare var ToolsSuiteModule: any;
 
 @Injectable()
 export class WasmService {
 
-  wasmReady: BehaviorSubject<boolean>;
-  module;
+  toolsSuiteModule;
   constructor() {
-    //WebAssembly.instantiate()
-    this.wasmReady = new BehaviorSubject<boolean>(false);
-    this.instantiateWasm('/assets/wasm/someTest.wasm');
+    this.toolsSuiteModule = ToolsSuiteModule;
+    console.log(this.toolsSuiteModule);
   }
 
-  test() {
-    debugger
-    return this.module.head_tool_calculate(
-      10, 10, 10, 10, 10, 10, 10, 10, 10, 10
-    );
+  annualCostTest(){
+    let instance = new ToolsSuiteModule.AnnualCost(2, 4);
+    return instance.calculate();
   }
 
-  public fibonacci(input: number): number {
-    return this.module._fibonacci(input)
+  efficiencyImprovementTest(){
+    let instance = new ToolsSuiteModule.EfficiencyImprovement(6, 2, 1600, 80, 750, 10, 1200);
+    return instance.getNewFuelSavings();
   }
 
+  o2EnrichmentTest(){
+    let instance = new ToolsSuiteModule.O2Enrichment(21, 100, 1800, 1900, 5, 1, 900, 80, 10);
+    return instance.getExcessAir();
+  }
 
-  private async instantiateWasm(url: string) {
-//     const response = await fetch('fibonacci.wasm');
-//     const module = await WebAssembly.compileStreaming(response);
-//     const instance = await WebAssembly.instantiate(module);
-// debugger
-
-
-    //fetch the wasm file
-    debugger
-    const wasmFile = await fetch(url);
-    debugger
-    // convert it into a binary array
-    const buffer = await wasmFile.arrayBuffer();
-    debugger
-    const binary = new Uint8Array(buffer);
-    debugger
-    // create module arguments 
-    // including the wasm-file
-    const moduleArgs = {
-      wasmBinary: binary,
-      onRuntimeInitialized: () => {
-        this.wasmReady.next(true);
-      }
-    };
-
-    // instantiate the module
-    debugger
-    this.module = Module(moduleArgs);
-    console.log('initialized');
-    debugger
+  pumpShaftPowerTest(){
+    let instance = new ToolsSuiteModule.PumpShaftPower(10, ToolsSuiteModule.Drive.S_BELT_DRIVE, 1400);
+    return instance.calculate().driveEfficiency;
   }
 }
