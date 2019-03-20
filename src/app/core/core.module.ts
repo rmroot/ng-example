@@ -11,6 +11,8 @@ import { LifecycleHooksModule } from './lifecycle-hooks/lifecycle-hooks.module';
 import { FormsExampleModule } from './forms-example/forms-example.module';
 import { PipesExampleModule } from './pipes-example/pipes-example.module';
 import { WasmModule } from './wasm/wasm.module';
+import { FirebaseExampleModule } from './firebase-example/firebase-example.module';
+import { AngularFireAuthModule } from '@angular/fire/auth';
 
 @NgModule({
   imports: [
@@ -21,7 +23,9 @@ import { WasmModule } from './wasm/wasm.module';
     LifecycleHooksModule,
     FormsExampleModule,
     PipesExampleModule,
-    WasmModule
+    WasmModule,
+    FirebaseExampleModule,
+    AngularFireAuthModule
   ],
   declarations: [CoreComponent, SidebarComponent, DashboardComponent, BannerComponent],
   exports: []

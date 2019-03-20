@@ -8,6 +8,7 @@ import { LifecycleHooksComponent } from './lifecycle-hooks/lifecycle-hooks.compo
 import { FormsExampleComponent } from './forms-example/forms-example.component';
 import { PipesExampleComponent } from './pipes-example/pipes-example.component';
 import { WasmComponent } from './wasm/wasm.component';
+import { FirebaseExampleComponent } from './firebase-example/firebase-example.component';
 
 const coreRoutes: Routes = [
     {
@@ -45,6 +46,10 @@ const coreRoutes: Routes = [
             {
                 path: 'wasm',
                 component: WasmComponent
+            },
+            {
+                path:'firebase-example',
+                component: FirebaseExampleComponent
             }
         ]
     }
