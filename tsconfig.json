@@ -15,9 +15,10 @@
     "lib": [
       "es2017",
       "dom"
-    ],
-    "paths": {
-      "@app/*": ["app/*"]
-    }
+    ]
+  },
+  "angularCompilerOptions": {
+    "enableIvy": true,
+    "allowEmptyCodegenFiles": true
   }
 }

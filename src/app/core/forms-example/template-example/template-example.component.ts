@@ -27,7 +27,7 @@ export class TemplateExampleComponent implements OnInit {
   ngOnInit() {
   }
 
-  @ViewChild('userForm') userForm: FormGroup;
+  @ViewChild('userForm', { static: true }) userForm: FormGroup;
   logForm(){
     console.log(this.userForm);
   }
