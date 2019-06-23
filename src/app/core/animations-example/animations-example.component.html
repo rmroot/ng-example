@@ -1,0 +1,9 @@
+<div class="d-flex w-100 h-100 justify-content-center align-items-center">
+  <button class="btn btn-primary" (click)="toggleToast()">Animate Toast!</button>
+</div>
+
+<div class="card toasty" [@toast]="toastState">
+  <div class="card-body">
+    Hey, I'm a piece of toast!
+  </div>
+</div>
