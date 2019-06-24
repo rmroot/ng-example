@@ -7,6 +7,7 @@ import { ParentComponent } from './component-interaction/parent/parent.component
 import { LifecycleHooksComponent } from './lifecycle-hooks/lifecycle-hooks.component';
 import { FormsExampleComponent } from './forms-example/forms-example.component';
 import { PipesExampleComponent } from './pipes-example/pipes-example.component';
+import { AnimationsExampleComponent } from './animations-example/animations-example.component';
 
 const coreRoutes: Routes = [
     {
@@ -40,6 +41,10 @@ const coreRoutes: Routes = [
             {
                 path: 'pipes-example',
                 component: PipesExampleComponent
+            },
+            {
+                path: 'animations-example',
+                component: AnimationsExampleComponent
             }
         ]
     }
