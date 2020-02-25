@@ -18,12 +18,17 @@
             "polyfills": "src/polyfills.ts",
             "assets": [
               "src/assets",
-              "src/favicon.ico"
+              "src/favicon.ico",
+              { 
+                "glob": "**/*", 
+                "input": "./node_modules/amo-tools-suite/bin/", 
+                "output": "./assets/" }
             ],
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+            ]
           },
           "configurations": {
             "production": {

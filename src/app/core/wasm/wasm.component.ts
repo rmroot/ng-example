@@ -13,9 +13,9 @@ export class WasmComponent implements OnInit {
   ngOnInit() {}
 
   test() {
-    console.log(this.wasmService.annualCostTest());
-    console.log(this.wasmService.efficiencyImprovementTest());
-    console.log(this.wasmService.o2EnrichmentTest());
+    // console.log(this.wasmService.annualCostTest());
+    // console.log(this.wasmService.efficiencyImprovementTest());
+    // console.log(this.wasmService.o2EnrichmentTest());
     console.log(this.wasmService.pumpShaftPowerTest());
   }
 }
