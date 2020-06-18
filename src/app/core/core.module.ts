@@ -11,6 +11,7 @@ import { LifecycleHooksModule } from './lifecycle-hooks/lifecycle-hooks.module';
 import { FormsExampleModule } from './forms-example/forms-example.module';
 import { PipesExampleModule } from './pipes-example/pipes-example.module';
 import { AnimationsExampleModule } from './animations-example/animations-example.module';
+import { DownloadCountModule } from './download-count/download-count.module';
 
 @NgModule({
   imports: [
@@ -21,7 +22,8 @@ import { AnimationsExampleModule } from './animations-example/animations-example
     LifecycleHooksModule,
     FormsExampleModule,
     PipesExampleModule,
-    AnimationsExampleModule
+    AnimationsExampleModule,
+    DownloadCountModule
   ],
   declarations: [CoreComponent, SidebarComponent, DashboardComponent, BannerComponent],
   exports: []

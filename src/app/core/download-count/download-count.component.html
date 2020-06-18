@@ -1,0 +1,26 @@
+<table class="table table-bordered table-hover">
+    <thead>
+        <tr>
+            <td>Release Name</td>
+            <td>Release Date</td>
+            <td>Windows</td>
+            <td>Mac</td>
+            <td>Linux</td>
+            <td>Total</td>
+            <td>Auto Update Checks</td>
+            <td>Grand Total</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let data of releaseData">
+            <td>{{data.releaseName}}</td>
+            <td>{{data.publishedDate | date}}</td>
+            <td>{{data.windows}}</td>
+            <td>{{data.mac}}</td>
+            <td>{{data.linux}}</td>
+            <td>{{data.total}}</td>
+            <td>{{data.autoUpdate}}</td>
+            <td>{{data.grandTotal}}</td>
+        </tr>
+    </tbody>
+</table>
